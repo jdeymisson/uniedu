@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Onda Verde Concórdia/SC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <script>document.documentElement.className += ' js';</script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+  <div class="logo">
+    <img src="img/unc.svg" alt="">
+  </div>
+  <nav class="menu js-menu">
+    <ul>
+      <li><a href="#animais">Artigo</a></li>
+      <li><a href="#faq">Considerações</a></li>
+      <li><a href="#contato">Pesquisadores</a></li>
+      <li><a href="https://unc.br/" target="_blank">UNC →</a></li>
+    </ul>
+  </nav>
+  <div class="uni">
+    <img src="img/uni.svg" alt="">
+  </div>
+  <section class="grid-section animais js-scroll" id="animais">
+    <h1 class="titulo-primary">CONCEITO DE ONDA VERDE APLICADO EM SEMÁFOROS DA CIDADE DE
+      CONCÓRDIA POR MICROSSIMULAÇÃO COMPUTACIONAL</h1>
+    <ul class="animais-lista js-tabmenu">
+      <li>
+        <div class="banner">
+          <p>INTRODUÇÃO</p>
+        </div>
+      </li>
+      <li>
+        <div class="banner">
+          <p>MATERIAL E MÉTODOS</p>
+        </div>
+      </li>
+      <li>
+        <div class="banner">
+          <p>RESULTADOS E DISCUSSÃO</p>
+        </div>
+      </li>
+      <li>
+        <div class="banner">
+          <p>CONCLUSÕES</p>
+        </div>
+      </li>
+      <li>
+        <div class="banner">
+          <p>REFERÊNCIAS</p>
+        </div>
+      </li>
+    </ul>
+    <div class="animais-descricao js-tabcontent">
+      <section>
+        <h2>INTRODUÇÃO</h2>
+        <p>As vias locais promovem a distribuição do tráfego local, apresentando baixa fluidez de tráfego e alta
+          acessibilidade. Por esses fatores é necessário estudos de otimização semafórica onde visam melhorar o
+          nível de serviço oferecido nas vias através de reprogramação dos dispositivos semafóricos para uma
+          melhor fluidez do trânsito.</p>
+         <p>Neste contexto, nosso estudo tem como objetivo simular a aplicação do conceito de onda verde nos 
+          dispositivos semafóricos da rua Dr. Maruri uma das principais vias urbanas de
+          Concórdia/SC, essa microssimulação de tráfego será feita através do software AIMSUN desenvolvido pela
+          empresa TSS (Transport Simulation System), que permite testar diferentes programações semafóricas
+          através de um modelo representativo das condições reais de oferta e demanda de tráfego, possibilitado
+          então analisar a densidade do percurso estudado, tempo de atraso, velocidade média e então permitindo
+          fazer essa comparação do cenário atual com o cenário proposto; bem como, o diagnóstico de viabilidade
+          acerca da análise dos dados.</p>
+        <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+      </section>
+      
+      <section>
+        <h2>MATERIAL E MÉTODOS</h2>
+        <p>O trecho estudado em questão possui uma extensão de 0,5 km (Figura 1), nele está contido 3
+          equipamentos semafóricos que ficam nas interseções com as Rua: Adolfo Konder, Rua do Comércio e
+          Rua Getúlio Vargas, os equipamentos trabalham em 2 planos programados denominados de Plano
+          normal e Plano de Pico.</p>
+        <div class="rota1">
+          <img src="img/rota1.jpg" alt="">
+          <p>Figura1</p>
+        </div>
+        <p>Em um primeiro momento foi preciso definir o fluxo da via para determinação dos
+          volumes do tráfego que segundo o Manual do estudo de tráfego (DNIT, 2006) define-se volume de tráfego
+          (ou fluxo de tráfego) como o número de veículos que passam por uma seção de uma via, ou de uma
+          determinada faixa, durante uma unidade de tempo, sendo assim, foi usado o método descrito no Highway
+          Capacity Manual 2010, para determinar o fluxo de saturação, o método HCM 2010 consiste em calcular o
+          FS a partir de uma capacidade típica, onde são considerados alguns fatores como fator de largura média
+          da faixa de rolamento, ocupação de área, fator de conversão a direita, assim foi obtido a capacidade do
+          segmento antecedente ao semáforo que para trabalhar com 60% de sua capacidade era multiplicado 0,6.
+          Para chegar ao resultado dos tempos entre os semáforos foram considerados os tempos de verdes
+          efetivos que foram somados com o amarelo</p>
+          <p>
+            Por fim, para obtermos a onda verde, foi preciso definir um
+            ciclo comum para todos os equipamentos semafóricos visto que se buscava um fluxo contínuo de
+            abertura a cada novo ciclo que teve como critérios a redução do tempo atual para 70 segundos, a
+            redução o tempo de travessia dos pedestres para 10 segundos e a velocidade média da via que foi de 40
+            km/h para 36 km/h ou 10 m/s onda verde representada na Figura 2.
+            <div class="rota1">
+              <img src="img/rita2.jpg" alt="">
+              <p>Figura2</p>
+            </div>
+            <p>Assim, iniciava a programação
+            semafórica, onde pelo software definia então as fases, duração e movimentos permitidos para a criação
+            do plano de controle Onda Verde onde será necessário adicionar mais dois semáforos nos cruzamentos
+            com as ruas Atalípio Magarinos e Prefeito Domingos Machado de Lima totalizando 5 semáforos onde será
+            necessário uso de placas indicativas que direcionassem o fluxo para as faixas determinadas.
+          </p>
+      </section>
+      <section>
+        <h2>RESULTADOS E DISCUSSÃO</h2>
+        <p>Durante as simulações, foi possível constatar que o tempo de atraso diminuiu consideravelmente em
+          razão ao fluxo contínuo que foi criado pela sincronização dos dispositivos semafóricos, tendo uma
+          redução 20% de 119 segundos para 76 segundos e na mesma proporção o tempo de viagem diminuiu de
+          218 seg/km para 174 seg/km.</p>
+      
+        <p>Ao fazer uma breve comparação do cenário atual (Figura 3) com o cenário proposto (Figura 4) após a
+          implementação da Onda Verde, as tonalidades vão do vermelho, mais denso ao verde mesmo denso.
+          Analisando os segmentos mais críticos do cenário atual a tonalidade em vermelho a densidade média
+          estava por volta de 85 veic/km e no segundo cenário(verde) a densidade caiu para 22 veic/km em média,
+          representando uma redução de 75% neste parâmetro.</p>
+          <div class="rota1">
+            <img src="img/figura3.jpg" alt="">
+            <p>Figura 3. Densidade Autal do tráfego da Rua Dr. Maruri.</p>
+          </div>
+          <div class="rota1">
+            <img src="img/figura4.jpg" alt="">
+            <p>Figura 4. Densidade tráfego após a microssimulação da Rua Dr. Maruri.</p>
+          </div>
+      </section>
+      <section>
+        <h2>CONCLUSÕES</h2>
+        <p>Conclui-se, portanto, que com a implantação destes tempos semafóricos calculados a fluidez do tráfego
+          nesta via seja otimizada, pois, se a velocidade estabelecida for obedecida, não haverá paradas no trecho
+          onde a “onda verde” foi sugerida, trazendo assim resultados positivos quanto a redução do tempo de
+          viagem para este trecho.</p>
+          <p>De acordo com análise feita pela reportagem das rádios Rural e 96, entre os cinco municípios que tem
+            população estimada entre 70 e 80 mil habitantes, em Santa Catarina, Concórdia é a que tem mais
+            veículos (carros, motos, caminhões entre outros), totalizando 59.187. O município conta, atualmente, com
+            72.642 habitantes, segundo o IBGE - quase um carro por habitante, diante deste contexto, vale apontar
+            que Concórdia/SC tem uma demanda muito grande em seu trânsito. Entretanto, a cidade vem de uma
+            urbanização tardia, o que configurou suas vias centrais como são conhecidas hoje, sem prever o potencial
+            econômico e a expansão urbana que a cidade viveria futuramente.</p>
+      </section>
+      <section>
+        <h2>Referências</h2>
+        <p>1. Rafael.C, Ruy, S.R, Paulo, C.P – Análise de simulação de tráfego de veículos urbanos– Programa
+          de Mestrado em Engenharia Civil, Sanitária e Ambiental de Concórdia, SC, 2020.</p>
+        <p>2. Rádio Rural. – Concórdia entre as cidades com maior número de veículos – Rádio Rural”, [s.d.]).</p>
+        <p>Departamento Nacional de Infraestrutura de Transportes (DNIT) – Manual de estudos de tráfego.
+          Rio de Janeiro. 384p., 2006.</p>
+
+      </section>
+  </section>
+
+  <section class="grid-section faq js-scroll" id="faq">
+    <h1 class="titulo">CONSIDERAÇÕES</h1>
+    <dl class="faq-lista js-accordion">
+      <dt>Agradecimentos</dt>
+      <dd>Em um primeiro momento agradecemos ao Estado de Santa Catarina, por proporciona esse financiamento
+        estudantil, atráves do Uniedu pelo artigo 170, onde podemos desenvolver um artigo cientifico, onde o objetivo foi fazer uma pesquisa visando
+        a melhoria do fluxo de trânsito da Cidade de Concórdia, com a implementação da Onda Verde. <br><br>
+
+        <p>Agradecemos também a oportunidade da UnC - Campus Concórdia - SC,  por proporcionar os Alunos desenvolva como pesquisadores.</p><br><br>
+
+        <p>Agradecimento em especial também para o Paulo Cesar Pinto (Professor Programa de Mestrado em Engenharia, Universidade do Contestado (UnC))
+          por está envolvido e orientando a pesquisa.
+        </p>
+
+      </dd>
+      <dt>Apresentações</dt>
+      <dd>
+        <h4>Jornada de iniciação Científica Jinc 15.</h4>
+        <p>A 15ª JINC é um evento organizado pela Embrapa Suínos e Aves e pela Universidade
+         do Contestado – UnC, com apoio do Instituto Federal Catarinense – Campus de Concórdia. Ela constitui uma oportunidade para divulgar e valorizar 
+         o conhecimento gerado nestas instituições envolvendo os alunos de iniciação científica. O evento também faz parte da programação da Semana Nacional de Ciência 
+         e Tecnologia/2021 de Concórdia/SC.</p></br>
+          
+        <h4>X SEMINÁRIO INTEGRADO DE PESQUISA, ENSINO E EXTENSÃO - X SIPEX 2021</h4> 
+        <p>o SIPEX 2021 vem para reafirmar a necessidade de tornar público o conhecimento produzido na Instituição por meio da socialização dos trabalhos para a comunidade 
+          científica e sociedade, possibilitando novas formas assimiláveis de conhecimento para todos os segmentos da ciência, afirma a reitora da UnC, Solange Sprandel da Silva.</p>
+      </dd>
+    </dl>
+  </section>
+
+  <section class="grid-section contato js-scroll" id="contato">
+    <h1 class="titulo">PESQUISADORES</h1>
+    <div class="mapa">
+      <img src="img/unc-end.jpg">
+    </div>
+    <ul class="dados">
+      <li>Jonny Deymisson da Mata Silva</li>
+      <li>Paulo Cesar Pinto - Orientador</li>
+      <li>Universidade do Contestado - Campus Concórdia</li>
+      <li>Rua Victor Sopelsa, Salete nº 3000</li>
+      <li>Concórdia - SC</li>
+    </ul>
+  </section>
+
+  <footer class="copy">
+    <p>Desenvolvido por Jonny Deymison</p>
+  </footer>
+
+  <script src="script.js"></script>  
+</body>
+</html>
